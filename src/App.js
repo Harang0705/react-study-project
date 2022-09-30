@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import style from './App.module.css';
+import logo from './logo.svg'; // 107 px * 70 px image svg
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className={style.mainInner}>
+        <div className={style.header}>
+          <ul className={style.mainbar}>
+            <li className={style.logo}>
+              <img src={logo}></img>
+            </li>
+            <li className={style.description}>
+              <a className={style.text}>설명</a>
+            </li>
+            <li className={style.vision}>
+              <a className={style.text}>목표</a>
+            </li>
+            <li className={style.appDownload}>
+              <a className={style.text}>앱 다운로드</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    );
+  }
 }
 
-export default App;
+export default App
