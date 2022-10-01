@@ -6,7 +6,7 @@ class App extends Component {
   render() {
     return (
       <div className={style.mainInner}>
-        <div className={style.header}>
+        <div className={style.header}> // header
           <ul className={style.mainbar}>
             <li className={style.logo}>
               <img src={logo}></img>
