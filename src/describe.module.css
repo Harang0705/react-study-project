@@ -1,32 +1,32 @@
 .inner 
 {
     width: 100%;
-    margin: 125px 0px;
+    height: 840px;
 }
 
-.inner > .content 
+.inner > .contents 
 {
     width: 1600px;
     height: 650px;
 
-    margin: 0px auto;
+    margin: 125px auto 0px;
     
     background: #FFFAED;
     border-radius: 75px;
 }
 
-.inner > .content > .logo 
+.inner > .contents > .logo 
 {
     float: left;
     padding: 46px;
 }
 
-.inner > .content > .text
+.inner > .contents > .text
 {
     float: left;
 }
 
-.inner > .content > .text > .textBox
+.inner > .contents > .text > .textBox
 {
     box-sizing: border-box;
 
@@ -41,7 +41,7 @@
     border-radius: 15px;
 }
 
-.inner > .content > .text > .textBox > a
+.inner > .contents > .text > .textBox > a
 {
    line-height: 70px;
    font-size: 36px;
@@ -51,12 +51,18 @@
 {
     width: 1600px;
 
-    margin: 20px auto;
+    margin: 0px auto;
 }
 
-.inner > .pageDownButton > img
+.inner > .pageDownButton > button
 {
     width: 168px;
+    height: 168px;
 
-    padding: 0px 716px;
+    margin: 0px 718px;
+
+    border-style: none;
+    background-color: transparent;
 }
+
+
